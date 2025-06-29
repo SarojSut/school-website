@@ -19,7 +19,8 @@ This project was created as a learning exercise to:
 
 ## Live Demo
 
-🔗[Click here to view the live site]([https://your-username.github.io/dd-public-school](https://sarojsut.github.io/school-website/))
+Click here to view the live site
+https://sarojsut.github.io/school-website/
 
 ---
 
