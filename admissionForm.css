@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    height: 70px;
+    width: 100px;
+    margin-right: 30px;
+}
+nav p{
+    font-size: 2rem;
+}
+nav{
+    padding: 0rem 15rem;
+    /* height: 4rem;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 2rem;
+    
+}
+.form-outline{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    padding-bottom: 1rem;
+}
+.form-outline p{
+    text-decoration: underline;
+}
+.div1{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid black;
+    background-color: rgb(175, 224, 189);
+}
+label{
+    display: block;
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    /* background-color: rgb(101, 196, 101); */
+    background-color: rgb(133, 202, 153);
+    color: white;
+    border-radius: .2rem;
+}
+input{
+    height: 1.8rem;
+    width: 13rem;
+    border-color: rgb(243, 239, 239);
+    padding: 0 .8rem;
+    text-transform: uppercase;
+    border: .1px solid grey;
+    border-radius: .5rem;
+}
+.student {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.remark{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 1rem 3rem;
+}
+.remark textarea{
+    height: 4rem;
+    width: 80%;
+    padding: .5rem;
+}
+.form-outline button{
+    height: 3rem;
+    width: 6.5rem;
+    border-radius: .5rem;
+    background-color: rgb(61, 180, 61);
+    border: none;
+    color: white;
+    font-size: larger;
+}
+#login{
+    background-color: rgb(68, 198, 68);
+    height: 2rem;
+    width: 4rem;
+    border: none;
+    border-radius: .2rem;
+    color: white;
+}
+#login:hover{
+    background-color: rgb(13, 121, 13);
+    transition: background-color .3s;
+}
+.form-outline button:hover{
+    background-color: rgb(13, 121, 13);
+    transition: background-color .3s;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.social-media a{
+    margin-right: 1.5rem;
+    color: black;
+    opacity: 0.7;
+}
+.social-media a:hover{
+    opacity: 1;
+    transition: transform 0.4s ease-in-out;
+    transform: translateY(-7px);
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 10rem;
+    background-color: rgb(239, 235, 235);
+}
+footer p, li{
+    font-size: 0.9rem;
+}
+.footer-img{
+    height: 6rem;
+    width: 6rem;
+}
+.footer-recent-post a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.footer-recent-post li a:hover{
+    color: rgb(87, 157, 241);
+}
+
+/* -----------------------                RESONSIVE            ------------------------- */
+@media (max-width: 768px){
+    nav{
+        /* flex-wrap: wrap; */
+        padding: 1rem;
+    }
+    nav p{
+        font-size: 1.5rem;
+    }
+    .logo{
+        height: 4rem;
+        width: 5rem;
+    }
+    .form-outline{
+        justify-content: space-around;
+        align-items: center;
+        padding: 1;
+    }
+    .div1{
+        font-size: .9rem;
+        height: 3rem;
+        padding: 1rem;
+    }
+    .student{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .parent{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    input{
+        width: 10rem;
+    }
+    .remark{
+        padding: 0rem;
+        gap: 0;
+        margin-bottom: 2rem;
+    }
+    .remark textarea{
+        width: 70%;
+    }
+    footer {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-info, .footer-mssg, .footer-recent-post {
+        width: 100%;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="admissionForm.css">
+</head>
+<body>
+    <header style="background-color: gainsboro;">
+        <nav>
+            <img src="images\logo 2.png" alt="logo" class="logo">
+            <p style="text-align: center;">Online Admission Form</p> 
+        </nav>
+    </header>
+    <section>
+        <div class="form-body">
+            <p style="text-align: left;">Click here to 
+                <a href="login.html">
+                    <button id="login">Login</button>
+                </a>
+            </p>
+            <form class="form-outline" style="align-items: center;" onsubmit="return validityAlert(this)">
+                <div class="div1">
+                    <p style="text-decoration: none;">Start of Admission Form: Please Follow Emailed instruction after Submitting.</p>
+                </div>
+                
+                <p style="color: rgb(0, 159, 0);">Student Details</p>
+                <br>
+                <div class="student">
+                    
+                    <div>
+                        <div class="label">
+                            <label for="std-name">First Name</label>
+                        </div>
+                        
+                        <input type="text" id="std-name" required>
+                    </div>
+                    <div>
+                        <label for="std-name">Middle Name</label>
+                        <input type="text" id="std-name">
+                    </div>
+                    <div>
+                        <label for="std-name">Last Name</label>
+                        <input type="text" id="std-name">
+                    </div>
+                    <div>
+                        <label for="dob">DOB</label>
+                        <input type="date" id="dob" required max="2025-07-11">
+                    </div>
+                    <div>
+                        <label for="class">Admission in class</label>
+                        <input type="text" id="class" required>
+                    </div>
+                    <div>
+                        <label for="board">Admission Board</label>
+                        <input type="text" id="board" required>
+                    </div>
+                </div>
+                <br>
+                <p style="color: rgb(0, 159, 0);">Parents Details</p>
+                <br>
+                <div class="parent">
+                
+                    <div>
+                        <label for="father-name">Father's First Name</label>
+                        <input type="text" id="father-name" required>
+                    </div>
+                    <div>
+                        <label for="father-name">Father's Middle Name</label>
+                        <input type="text" id="father-name">
+                    </div>
+                    <div>
+                        <label for="father-name">Father's Last Name</label>
+                        <input type="text" id="father-name">
+                    </div>
+                    <div>
+                        <label for="mob">Mobile No.</label>
+                        <input type="number" id="mob" required pattern="\d{10,}">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" >
+                    </div>
+                    <div>
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" required>
+                    </div>    
+                
+                    <div>
+                        <label for="mother-name">Mother's First Name</label>
+                        <input type="text" id="mother-name" required>
+                    </div>
+                    <div>
+                        <label for="mother-name">Mother's Middle Name</label>
+                        <input type="text" id="mother-name">
+                    </div>
+                    <div>
+                        <label for="mother-name">Mother's Last Name</label>
+                        <input type="text" id="mother-name">
+                    </div>
+                    <div>
+                        <label for="mob">Mobile No.</label>
+                        <input type="number" id="mob" required pattern="\d{10,}">
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" >
+                    </div>
+                    <div>
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" required>
+                    </div>
+               
+                    <div>
+                        <label for="house">House No.</label>
+                        <input type="text" id="house">
+                    </div>
+                    <div>
+                        <label for="street">Street</label>
+                        <input type="text" id="street">
+                    </div>
+                    <div>
+                        <label for="code">Pincode</label>
+                        <input type="number"  id="code" required>
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <input type="text" value="INDIA" disabled>
+                    </div>
+                    <div>
+                        <label for="state">States</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" required>
+                    </div>
+                </div>
+                <br>
+                <div class="remark">
+                    <p><b>Remark:</b></p>
+                    <textarea  id=""></textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" id="form-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-mssg">
+            <img src="images\logo 2.png" alt="logo" class="footer-img">
+            <p>The mission of our school is to create 
+                <br>a better future for all children. 
+                <br>We achieve this by maximising opportunities 
+                <br>for children through holistic, 
+                <br>values-based education of the highets 
+                <br>quality and through initatives that 
+                <br>promote unity and meaningful 
+                <br>social action for development.
+            </p>
+        </div>
+        <div class="footer-info">
+            <h3 style="text-align: center;">Information</h3>
+            <br>
+            <div>
+                <i class="fa-solid fa-location-arrow"></i>
+                <p>Naghara, Goshainganj,
+                    <br> AmbedkarNagar
+                    <br>224141
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>(+91)8009682732,
+                    <br>9696167856
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@ddps.com</p>
+            </div>
+        </div>
+        <div class="footer-recent-post">
+            <h3 style="text-align: center;">Recent Posts</h3>
+            <br>
+            <ul style="list-style: none;">
+                <li><a href="/">Campus History</a></li> <br>
+                <li><a href="">Principal's Desk</a></li> <br>
+                <li><a href="">Health and <br>Resiliance</a></li> <br>
+                <li><a href="">Lessons of Hope</a></li> <br>
+                <li><a href="">A Transformed <br>Education at <br>DDPS</a></li>
+            </ul> <br>
+            <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com" targset="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+             </div>
+        </div>
+    </footer>
+    <div>
+        <p style="text-align: center; font-size: 13px; padding: 0.5rem;">Copyright &copy; 2025 D.D. Public School | All Rights Reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

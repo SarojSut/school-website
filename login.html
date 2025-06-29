@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <section>
+        <div class="login-body">
+            <!-- <div class="school-name"> -->
+            <p class="school-name">D.D. Public School</p>
+            <!-- </div> -->
+            
+            <div class="form">
+                <form onsubmit="return loginClicked(this)">
+                    <div>Admission Form</div>
+                    <input type="number" placeholder="Enter Application Form No." required pattern="\d{14,}">
+                    <br>
+                    <input type="password" placeholder="Enter Password" required>
+                    <br>
+                    <!-- <a href="admissionForm.html"> -->
+                        <button type="submit">Login</button>
+                    <!-- </a> -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
